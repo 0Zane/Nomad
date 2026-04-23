@@ -2,8 +2,14 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid 76473bbd-feb6-4b7c-8160-a4d55fa11a55)
+	(uuid "76473bbd-feb6-4b7c-8160-a4d55fa11a55")
 	(paper "A4")
+	(title_block
+		(title "Nomad")
+		(rev "[In dev]")
+		(comment 1 "By @0Zane")
+		(comment 2 "Built for @Hackclub")
+	)
 	(lib_symbols)
 	(sheet_instances
 		(path "/"

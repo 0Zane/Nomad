@@ -1,3 +1,3 @@
 *.kicad_prl
 /nomad-backups/*
-*.kicad.lck
+*.*.lck
