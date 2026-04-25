@@ -6,7 +6,11 @@
 
 float readtemp();
 void flashlight(bool);
-
+bool readbuttondown (int pin);
+bool readbuttonleft (int pin);
+bool readbuttonright (int pin);
+bool readbuttonup (int pin);
+bool readbuttonselect (int pin);
 
 void setup(){
 
@@ -14,39 +18,18 @@ void setup(){
     pinMode(1, OUTPUT);
     pinMode(7, OUTPUT);
     pinMode(15, OUTPUT); // RED LED
+    pinMode(47, INPUT);
 }
 
 
 void loop(){
-
-    while (Serial.available() ==0 ){
-        if(digitalRead(15) == 0){
-            digitalWrite(7,0);
-            digitalWrite(15,1);
-        }
-    }
-        String command = Serial.readStringUntil('\n');
-        digitalWrite(15,0);
-        if(digitalRead(7) == 0){
-
-            digitalWrite(7,1);
-        }
+    readbuttondown (47);
+    readbuttonleft (18);
+    readbuttonright (16);
+    readbuttonup (17);
+    readbuttonselect (45);
 
 
-            if (command == "o"){
-                Serial.println("Flashlight_on");
-                flashlight(1); 
-            }else if (command == "f"){
 
-                flashlight(0);
-                Serial.println("Flashlight_off");
-            } else if (command == "r"){
-
-                Serial.println(readtemp());
-            } else { 
-                Serial.println("Unknown command");
-                Serial.print(command);
-            }
-
-
+    delay(100);
     }
