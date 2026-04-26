@@ -19,13 +19,17 @@ void setup(){
     pinMode(7, OUTPUT);
     pinMode(15, OUTPUT); // RED LED
     pinMode(47, INPUT);
+    pinMode(45, INPUT);
+    pinMode(18, INPUT);
+    pinMode(8, INPUT);
+    pinMode(17, INPUT);
 }
 
 
 void loop(){
     readbuttondown (47);
     readbuttonleft (18);
-    readbuttonright (16);
+    readbuttonright (8);
     readbuttonup (17);
     readbuttonselect (45);
 
