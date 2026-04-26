@@ -1,15 +1,17 @@
-#include <DHT.h>
+#include <Adafruit_MCP9808.h>
+#include <pins.h>
+#include <Wire.h>
 
+Adafruit_MCP9808 temperaturesensor = Adafruit_MCP9808();
 
+bool initTempSensor(){
 
-#define DHTTYPE DHT11
-#define DHTPIN 2
-
+    return temperaturesensor.begin(0x18);
+}
 
 float readtemp(){
-    DHT dht(DHTPIN, DHTTYPE);
-    float temp = dht.readTemperature();
 
+    float temp = temperaturesensor.readTempC();
     return temp;
     
 }

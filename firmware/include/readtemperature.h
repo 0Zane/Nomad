@@ -3,3 +3,4 @@
 
 float readtemp();
 
+bool  initTempSensor();
