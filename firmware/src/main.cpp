@@ -1,50 +1,50 @@
 #include <Arduino.h>
 #include <Wire.h>
-#include "readtemperature.h"
 #include "flashlight.h"
+#include "buttonread.h"
+#include "config.h"
+#include "Adafruit_MCP9808.h"
+#include "Adafruit_PCF8574.h"
 
-float readtemp();
+Adafruit_PCF8574 pcf;
+Adafruit_MCP9808 temperaturesensor = Adafruit_MCP9808();
+
 void flashlight(bool);
-bool readbuttondown (int pin);
-bool readbuttonleft (int pin);
-bool readbuttonright (int pin);
-bool readbuttonup (int pin);
-bool readbuttonselect (int pin);
-bool  initTempSensor();
+int readbutton();
+
 
 void setup(){
+    // PCF GPIO EXTENDER INITIALISATION
+    if (!pcf.begin(0x20, &Wire)) {
+        Serial.println("Couldn't find PCF8574");
+    }
+    for (uint8_t p=0; p<8; p++) {
+        pcf.pinMode(p, INPUT_PULLUP);
+    }
 
-
-    if (!initTempSensor()) {
+    //MCP9808 INITIALISATION
+    if (!temperaturesensor.begin(0x18)) {
         Serial.println("MCP9808 not found!");
     } else {
         Serial.println("MCP9808 Ready.");
     }
-    
+        
     Serial.begin(9600);
-    pinMode(1, OUTPUT);
-    pinMode(7, OUTPUT);
-    pinMode(15, OUTPUT); // RED LED
-    pinMode(47, INPUT);
-    pinMode(45, INPUT);
-    pinMode(18, INPUT);
-    pinMode(8, INPUT);
-    pinMode(17, INPUT);
-    Wire.begin(21,20);
+
+
 }
 
-
 void loop(){
-    readbuttondown (47);
-    readbuttonleft (18);
-    readbuttonright (8);
-    readbuttonup (17);
-    readbuttonselect (45);
-
-    if (readbuttonselect (45)){
-
-        Serial.println(readtemp());
+    int pressed_button =readbutton();
+    if(pressed_button != -1){
+        Serial.println(pressed_button);
     }
+  
 
-    delay(100);
+
+    float temp = temperaturesensor.readTempC();
+    Serial.println(temp);
+
+
+    delay(1000);
     }
