@@ -1,11 +1,19 @@
-Prototyping pins:
 
-DHT: 2
-Flashlight: 1
+I2C BUS ON S3: SDA 8     SCL 9
+I2C addresses:
+PCF8574: 0x20
+MCP9808: 0x18
 
+to do:
 
-Serial commands:
+Read GPS coordonates
+Read button inputs
+Read temperature
+Send LoRa strings
+Register audios
+Play audios
 
-`o` flashlight on
-`f` flashlight off
-`r` read temperature 
+Then
+PCB
+Then 
+case
