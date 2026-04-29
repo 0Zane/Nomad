@@ -1,91 +1,20 @@
-#include <Arduino.h>
+#include "Adafruit_PCF8574.h"
+#include "config.h"
 #include "buttonread.h"
 
+extern Adafruit_PCF8574 pcf;
 
-bool readbuttondown (int pin){
 
+int readbutton () {
+  for (uint8_t p=0; p<5; p++) { // Only reading from 0 to 4 included, we only have 5 buttons
 
-    if(digitalRead(pin) == 0){
-
-        Serial.println("Down button pressed !");
-        digitalWrite(7, 1);
-        return 1;
-    }else{
-
-        digitalWrite(7, 0);
-        return 0;
+    if (! pcf.digitalRead(p)) { // Check if the pin is low (onrmally pullup)
+        return p;
     }
+    
+    
+  }
 
-}
-
-
-
-
-bool readbuttonleft (int pin){
-
-
-    if(digitalRead(pin) == 0){
-
-        Serial.println(" Left button pressed !");
-        digitalWrite(7, 1);
-        return 1;
-        
-    }else{
-
-        digitalWrite(7, 0);
-        return 0;
-    }
-
-}
-bool readbuttonright (int pin){
-
-
-    if(digitalRead(pin) == 0){
-
-        Serial.println(" Right button pressed !");
-        digitalWrite(7, 1);
-        return 1;
-        
-    }else{
-
-        digitalWrite(7, 0);
-        return 0;
-    }
-
-}
-bool readbuttonup (int pin){
-
-    if(digitalRead(pin) == 0){
-
-        Serial.println(" Up button pressed !");
-        digitalWrite(7, 1);
-        return 1;
-        
-    }else{
-
-        digitalWrite(7, 0);
-        return 0;
-    }
-
-}
-
-
-
-
-bool readbuttonselect (int pin){
-
-    if(digitalRead(pin) == 0){
-
-        Serial.println(" Select button pressed !");
-        digitalWrite(7, 1);
-        
-        return 1;         
-        
-    }else{
-
-        digitalWrite(7, 0);
-        return 0;
-    }
-
+  return -1;
 
 }
