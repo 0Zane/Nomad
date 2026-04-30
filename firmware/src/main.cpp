@@ -3,15 +3,19 @@
 #include "flashlight.h"
 #include "buttonread.h"
 #include "config.h"
+#include "readtemperature.h"
 #include "Adafruit_MCP9808.h"
 #include "Adafruit_PCF8574.h"
+#include "gps.h"
+
+
 
 Adafruit_PCF8574 pcf;
-Adafruit_MCP9808 temperaturesensor = Adafruit_MCP9808();
+
 
 void flashlight(bool);
 int readbutton();
-
+void readgps();
 
 void setup(){
     // PCF GPIO EXTENDER INITIALISATION
@@ -29,6 +33,9 @@ void setup(){
         Serial.println("MCP9808 Ready.");
     }
         
+    //GPS INITIALIZATION
+    gpsSerial.begin(GPS_BAUD, SERIAL_8N1, RXD2, TXD2);
+    Serial.println("Serial 2 started at 9600 baud rate");
     Serial.begin(9600);
 
 
@@ -45,6 +52,7 @@ void loop(){
     float temp = temperaturesensor.readTempC();
     Serial.println(temp);
 
+    readgps();
 
-    delay(1000);
+    delay(100);
     }
