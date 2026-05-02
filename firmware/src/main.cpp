@@ -11,7 +11,7 @@
 
 
 Adafruit_PCF8574 pcf;
-
+bool buttonpressed = true;
 
 void flashlight(bool);
 int readbutton();
@@ -42,16 +42,16 @@ void setup(){
 }
 
 void loop(){
-    int pressed_button =readbutton();
-    if(pressed_button != -1){
+
+    if (!digitalRead(10)) {
+        int pressed_button = readbutton();
+        if(pressed_button != -1)
         Serial.println(pressed_button);
     }
-  
+    
 
 
-    float temp = temperaturesensor.readTempC();
-    Serial.println(temp);
-
+    
     readgps();
 
     delay(100);
