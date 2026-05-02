@@ -1,0 +1,1 @@
+int nav(int button_action, int current_page);
