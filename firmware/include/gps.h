@@ -1,8 +1,5 @@
-#include <TinyGPS++.h>
-
-
-#define RXD2 16
-#define TXD2 17
+#include "TinyGPSPlus.h"
+#include "pins.h"
 
 #define GPS_BAUD 9600
 

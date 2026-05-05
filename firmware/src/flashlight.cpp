@@ -1,8 +1,9 @@
 #include <Arduino.h>
+#include "pins.h"
 
 void flashlight(bool state){
 
 
-    digitalWrite(1,state);
+    digitalWrite(FLASHLIGHT,state);
     
 }

@@ -8,6 +8,7 @@
 #include "Adafruit_PCF8574.h"
 #include "gps.h"
 #include "navigation.h"
+#include "pins.h"
 
 Adafruit_BME280 bme;  
 Adafruit_PCF8574 pcf;
@@ -48,7 +49,7 @@ void setup(){
 void loop(){
 
     // If the GPIO extender INT pin is pressed, we ask to the nav funciton to actualize the current page of the menu
-    if (!digitalRead(10)) {
+    if (!digitalRead(INT)) {
         current_page = nav(readbutton(),current_page);  
         Serial.println(current_page);
         buttonpressed = true;
@@ -56,31 +57,9 @@ void loop(){
 
     if (current_page == 21){
         readgps();
-    } 
+    } else if (current_page == 1){
 
-    else if (current_page == 1){
-
-
-
-
-    Serial.print("Temperature = ");
-    Serial.print(bme.readTemperature());
-    Serial.println(" *C");
-
-    Serial.print("Pressure = ");
-
-    Serial.print(bme.readPressure() / 100.0F);
-    Serial.println(" hPa");
-/*
-    Serial.print("Approx. Altitude = ");
-    Serial.print(bme.readAltitude(SEALEVELPRESSURE_HPA));
-    Serial.println(" m");
-*/
-    Serial.print("Humidity = ");
-    Serial.print(bme.readHumidity());
-    Serial.println(" %");
-
-    Serial.println();
+        readtemp();
     
     }
 
@@ -94,5 +73,5 @@ void loop(){
 
     
 
-    delay(100);
+    delay(300);
     }
