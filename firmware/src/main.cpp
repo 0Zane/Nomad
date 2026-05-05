@@ -4,12 +4,12 @@
 #include "buttonread.h"
 #include "config.h"
 #include "readtemperature.h"
-#include "Adafruit_MCP9808.h"
+#include "Adafruit_BME280.h"
 #include "Adafruit_PCF8574.h"
 #include "gps.h"
 #include "navigation.h"
 
-
+Adafruit_BME280 bme;  
 Adafruit_PCF8574 pcf;
 bool buttonpressed = true;
 
@@ -17,7 +17,7 @@ void flashlight(bool);
 int readbutton();
 void readgps();
 int nav(int, int);
-
+void readtemp();
 int current_page = 0;
 
 void setup(){
@@ -30,12 +30,10 @@ void setup(){
         pcf.pinMode(p, INPUT_PULLUP);
     }
 
-    //MCP9808 INITIALISATION
-    if (!temperaturesensor.begin(0x18)) {
-        Serial.println("MCP9808 not found!");
-    } else {
-        Serial.println("MCP9808 Ready.");
-    }
+    //BME280 INITIALISATION
+    if (!bme.begin(0x76, &Wire)) {
+        Serial.println("Could not find a valid BME280 sensor, check wiring!");
+        }
         
     //GPS INITIALIZATION
     gpsSerial.begin(GPS_BAUD, SERIAL_8N1, RXD2, TXD2);
@@ -44,8 +42,8 @@ void setup(){
 
     
 
+    }
 
-}
 
 void loop(){
 
@@ -61,7 +59,29 @@ void loop(){
     } 
 
     else if (current_page == 1){
-        Serial.println(readtemp());
+
+
+
+
+    Serial.print("Temperature = ");
+    Serial.print(bme.readTemperature());
+    Serial.println(" *C");
+
+    Serial.print("Pressure = ");
+
+    Serial.print(bme.readPressure() / 100.0F);
+    Serial.println(" hPa");
+/*
+    Serial.print("Approx. Altitude = ");
+    Serial.print(bme.readAltitude(SEALEVELPRESSURE_HPA));
+    Serial.println(" m");
+*/
+    Serial.print("Humidity = ");
+    Serial.print(bme.readHumidity());
+    Serial.println(" %");
+
+    Serial.println();
+    
     }
 
     else if (current_page == 41){
@@ -73,7 +93,6 @@ void loop(){
 
 
     
-    //readgps();
 
     delay(100);
     }

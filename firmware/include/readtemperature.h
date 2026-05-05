@@ -1,6 +1,6 @@
 
 
 
-float readtemp();
 
-bool  initTempSensor();
+
+void readtemp();
