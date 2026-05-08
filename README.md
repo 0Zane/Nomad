@@ -27,7 +27,7 @@
 |-----------|---------------|-----------|---------|
 | **MCU** | ESP32-S3 | — | Main processor, development in C++/PlatformIO/Arduino |
 | **Display** | LCD IPS Screen | SPI | Smooth UI with menus/submenus, PWM brightness control |
-| **GPS** | u-blox M10 | UART (NMEA) | Localization; uses TinyGPS++ library |
+| **GPS** | u-blox M10 | UART | Localization; uses TinyGPS++ library |
 | **LoRa** | Ebyte E22 | SPI | Long-range messaging (SOS, coordinates) |
 | **Environmental** | BME280 | I2C | Temperature & atmospheric pressure sensing |
 | **Input** | 5 Buttons + PCF8574 | I2C (GPIO Expander) | Robust button handling with interrupt support |
@@ -71,51 +71,11 @@ Nomad/
 │   ├── nomad.kicad_pcb      # PCB layout
 │   └── ...
 ├── assets/                   # Logos, documentation images
-│   └── nomadlogo.png
+│   └── every logo in png format
 ├── case/                     # 3D enclosure design files (if applicable)
 └── README.md                 # This file
 ```
 
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- **VS Code** with **PlatformIO** extension installed
-- **ESP32-S3** development board
-- Compatible USB cable (USB-C for many ESP32-S3 boards)
-
-### Setup Instructions
-
-1. **Clone or navigate to the project:**
-   ```bash
-   cd c:\Users\Zane\Documents\Projects\Nomad\firmware
-   ```
-
-2. **Open in VS Code:**
-   ```bash
-   code .
-   ```
-
-3. **Configure PlatformIO:**
-   - Open `platformio.ini` and verify board/port settings
-   - Select target environment if multiple are defined
-
-4. **Install Dependencies:**
-   - PlatformIO will auto-download required libraries (e.g., TinyGPS++, BME280 drivers, LoRa libraries)
-
-5. **Build & Upload:**
-   ```bash
-   # Via PlatformIO CLI
-   pio run -t upload
-   
-   # Or use VS Code PlatformIO toolbar
-   ```
-
-6. **Monitor Serial Output:**
-   ```bash
-   pio device monitor
-   ```
 
 ---
 
