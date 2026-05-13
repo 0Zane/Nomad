@@ -557,19 +557,19 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -582,12 +582,24 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
-      "filter_string": "",
+      "filter_string": "C",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -632,7 +644,7 @@
         "uuid": "76473bbd-feb6-4b7c-8160-a4d55fa11a55"
       }
     ],
-    "used_designators": "U1,SW6-7,#PWR2,#PWR4,#PWR31-33,C2-4,R15",
+    "used_designators": "U1,U5-7,SW6-7,#PWR2,#PWR4,#PWR6,#PWR31-40,C2-5,R15",
     "variants": []
   },
   "sheets": [
