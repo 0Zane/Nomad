@@ -594,9 +594,57 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
         }
       ],
-      "filter_string": "C",
+      "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
@@ -642,15 +690,24 @@
         "filename": "nomad.kicad_sch",
         "name": "Root",
         "uuid": "76473bbd-feb6-4b7c-8160-a4d55fa11a55"
+      },
+      {
+        "filename": "modules.kicad_sch",
+        "name": "Modules",
+        "uuid": "75162775-b452-4045-a830-d8be845c35df"
       }
     ],
-    "used_designators": "U1,U5-7,SW6-7,#PWR2,#PWR4,#PWR6,#PWR31-40,C2-5,R15",
+    "used_designators": "IC1-2,J2-4,H1,L2,#PWR27-29,#PWR47-50,D1-2,U3-4,U6,C9,R14,R16-17",
     "variants": []
   },
   "sheets": [
     [
       "76473bbd-feb6-4b7c-8160-a4d55fa11a55",
       "Root"
+    ],
+    [
+      "75162775-b452-4045-a830-d8be845c35df",
+      "Modules"
     ]
   ],
   "text_variables": {},
