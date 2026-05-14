@@ -14,6 +14,7 @@
 - **LoRa Communication** for long-range mesh-style messaging (SOS alerts, coordinate sharing)
 - **Environmental Monitoring** (temperature, atmospheric pressure, altitude)
 - **Intuitive UI** with multi-level menus and state-machine-driven navigation
+- **Survival tips** useful tips for adventurers
 - **Battery Optimization** with deep sleep and intelligent power management
 - **Custom PCB Design** 
 
@@ -25,10 +26,10 @@
 
 | Component | Specification | Interface | Purpose |
 |-----------|---------------|-----------|---------|
-| **MCU** | ESP32-S3 | — | Main processor, development in C++/PlatformIO/Arduino |
+| **MCU** | ESP32-S3-WROOM-1U | — | Main processor, development in C++/PlatformIO/Arduino |
 | **Display** | LCD IPS Screen | SPI | Smooth UI with menus/submenus, PWM brightness control |
-| **GPS** | u-blox M10 | UART | Localization; uses TinyGPS++ library |
-| **LoRa** | Ebyte E22 | SPI | Long-range messaging (SOS, coordinates) |
+| **GPS** | u-blox M8N | UART | Localization; uses TinyGPS++ library |
+| **LoRa** | Ebyte E22 | UART | Long-range messaging (SOS, coordinates) |
 | **Environmental** | BME280 | I2C | Temperature & atmospheric pressure sensing |
 | **Input** | 5 Buttons + PCF8574 | I2C (GPIO Expander) | Robust button handling with interrupt support |
 | **Power** | Li-ion 18650 | — | Main battery; needs protection circuit & optimization |
@@ -67,11 +68,12 @@ Nomad/
 │   ├── lib/                 # Third-party libraries
 │   └── test/                # Unit tests
 ├── pcb/                      # KiCad PCB design files
-│   ├── nomad.kicad_sch      # Schematic
+│   ├── nomad.kicad_sch      # Main system schematic
+│   ├── modules.kicad_sch    # Modules schematic
 │   ├── nomad.kicad_pcb      # PCB layout
 │   └── ...
 ├── assets/                   # Logos, documentation images
-│   └── every logo in png format
+│   └── every logo & graphics in png format
 ├── case/                     # 3D enclosure design files (if applicable)
 └── README.md                 # This file
 ```
