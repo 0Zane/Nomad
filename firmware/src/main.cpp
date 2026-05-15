@@ -9,11 +9,14 @@
 #include "gps.h"
 #include "navigation.h"
 #include "pins.h"
+#include "Adafruit_MAX1704X.h"
 
+Adafruit_MAX17048 maxlipo;
 Adafruit_BME280 bme;  
 Adafruit_PCF8574 pcf;
 bool buttonpressed = true;
 
+float getbattery();
 void flashlight(bool);
 int readbutton();
 void readgps();
@@ -31,7 +34,7 @@ void setup(){
         pcf.pinMode(p, INPUT_PULLUP);
     }
 
-    //BME280 INITIALISATION
+    //TEMPERATURE SENSOR INITIALISATION
     if (!bme.begin(0x76, &Wire)) {
         Serial.println("Could not find a valid BME280 sensor, check wiring!");
         }
@@ -40,8 +43,13 @@ void setup(){
     gpsSerial.begin(GPS_BAUD, SERIAL_8N1, RXD2, TXD2);
     Serial.println("Serial 2 started at 9600 baud rate");
     Serial.begin(9600);
-
     
+    //BATTERY MANAGER INITIALIZATION
+    if (!maxlipo.begin()) {
+    Serial.println(F("Couldnt find Adafruit MAX17048? Make sure a battery is plugged in!"));
+    }  else {Serial.print(F("Found MAX17048"));
+    Serial.print(F(" with Chip ID: 0x")); 
+    Serial.println(maxlipo.getChipID(), HEX);}
 
     }
 
@@ -65,6 +73,14 @@ void loop(){
 
     else if (current_page == 41){
         Serial.println("This is a survival advice");
+    }
+
+        else if (current_page == 51){
+            float cellVoltage, cellPercentage = getbattery();
+            Serial.print(F("Batt Voltage: ")); Serial.print(cellVoltage, 3); Serial.println(" V");
+            Serial.print(F("Batt Percent: ")); Serial.print(cellPercentage, 1); Serial.println(" %");
+            Serial.println();
+
     }
 
 
