@@ -4567,6 +4567,30 @@
 			)
 		)
 	)
+	(global_label "FLASHLIGHT"
+		(shape input)
+		(at 195.58 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2960727a-5559-4c7a-9f22-9187f16bf332")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 209.5115 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "BOOT"
 		(shape input)
 		(at 236.22 36.83 180)
@@ -4748,6 +4772,30 @@
 		(uuid "6338889d-f801-4a64-a2e7-5ce0f2717b5c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 226.2197 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 236.22 59.69 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "67e3f7c1-efaf-4d38-a724-a4134905bebe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 229.7272 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4996,6 +5044,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 236.22 57.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e7218491-b7a0-40ea-be5c-6eda694542eb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 229.6667 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
