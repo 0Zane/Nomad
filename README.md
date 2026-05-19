@@ -32,6 +32,8 @@
 | **LoRa** | Ebyte E22 | UART | Long-range messaging (SOS, coordinates) |
 | **Environmental** | BME280 | I2C | Temperature & atmospheric pressure sensing |
 | **Input** | 5 Buttons + PCF8574 | I2C (GPIO Expander) | Robust button handling with interrupt support |
+| **Battery Manager** | Adafruit MAX17048 | I2C | Fuel gauge & battery voltage monitoring |
+| **Flashlight** | LED | GPIO (Pin 1) | Controlled illumination light |
 | **Power** | Li-ion 18650 | — | Main battery; needs protection circuit & optimization |
 
 ### Development Stack
