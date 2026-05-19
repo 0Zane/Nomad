@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 6.5,
+          "width": 7.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -642,6 +642,18 @@
           "label": "MF",
           "name": "MF",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -697,7 +709,7 @@
         "uuid": "75162775-b452-4045-a830-d8be845c35df"
       }
     ],
-    "used_designators": "C1,C10-11,#PWR1,#PWR3,#PWR26,#PWR30,#PWR51-57,Q1,R1",
+    "used_designators": "U8",
     "variants": []
   },
   "sheets": [
