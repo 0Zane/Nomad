@@ -20,16 +20,6 @@
  *
  * Renzo Mischianti <https://www.mischianti.org>
  * https://www.mischianti.org/category/my-libraries/ebyte-lora-e22-devices/
- *
- * E22		  ----- Arduino
- * M0         ----- 7 (or GND)
- * M1         ----- 6 (or GND)
- * RX         ----- 4 (PullUP)
- * TX         ----- 5 (PullUP)
- * AUX        ----- 3  (PullUP)
- * VCC        ----- 3.3v/5v
- * GND        ----- GND
- *
  */
 
 // If you want use RSSI uncomment //#define ENABLE_RSSI true
@@ -39,38 +29,9 @@
 #include "Arduino.h"
 #include "LoRa_E22.h"
 
-// ---------- esp8266 pins --------------
-//LoRa_E22 e22ttl(RX, TX, AUX, M0, M1);  // Arduino RX <-- e22 TX, Arduino TX --> e22 RX
-// LoRa_E22 e22ttl(D3, D4, D5, D7, D6); // Arduino RX <-- e22 TX, Arduino TX --> e22 RX AUX M0 M1
-//LoRa_E22 e22ttl(D2, D3); // Config without connect AUX and M0 M1
 
-//#include <SoftwareSerial.h>
-//SoftwareSerial mySerial(D2, D3); // Arduino RX <-- e22 TX, Arduino TX --> e22 RX
-//LoRa_E22 e22ttl(&mySerial, D5, D7, D6); // AUX M0 M1
-// -------------------------------------
 
-// ---------- Arduino pins --------------
-//LoRa_E22 e22ttl(4, 5, 3, 7, 6); // Arduino RX <-- e22 TX, Arduino TX --> e22 RX AUX M0 M1
-//LoRa_E22 e22ttl(4, 5); // Config without connect AUX and M0 M1
-
-//#include <SoftwareSerial.h>
-//SoftwareSerial mySerial(4, 5); // Arduino RX <-- e22 TX, Arduino TX --> e22 RX
-//LoRa_E22 e22ttl(&mySerial, 3, 7, 6); // AUX M0 M1
-// -------------------------------------
-
-// ------------- Arduino Nano 33 IoT -------------
-// LoRa_E22 e22ttl(&Serial1, 2, 4, 6); //  RX AUX M0 M1
-// -------------------------------------------------
-
-// ------------- Arduino MKR WiFi 1010 -------------
-// LoRa_E22 e22ttl(&Serial1, 2, 4, 6); //  RX AUX M0 M1
-// -------------------------------------------------
-  Serial1.setTX(17);
-  Serial1.setRX(18);
-// ---------- esp32 pins --------------
-LoRa_E22 e22ttl(&Serial1, 8, 21, 19); //  RX AUX M0 M1
-
-//LoRa_E22 e22ttl(&Serial2, 22, 4, 18, 21, 19, UART_BPS_RATE_9600); //  esp32 RX <-- e22 TX, esp32 TX --> e22 RX AUX M0 M1
+LoRa_E22 e22ttl(13, 14, &Serial2, 18, 21, 19, UART_BPS_RATE_9600); //  esp32 TX, RX, Serial, AUX, M0, M1
 // -------------------------------------
 
 void setup() {
