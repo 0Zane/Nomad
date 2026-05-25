@@ -34,7 +34,7 @@
 | **Input** | 5 Buttons + PCF8574 | I2C (GPIO Expander) | Robust button handling with interrupt support |
 | **Battery Manager** | Adafruit MAX17048 | I2C | Fuel gauge & battery voltage monitoring |
 | **Flashlight** | LED | GPIO (Pin 1) | Controlled illumination light |
-| **Power** | Li-ion 18650 | — | Main battery; needs protection circuit & optimization |
+| **Power** | Li-ion | — | Main battery; needs protection circuit & optimization |
 
 ### Development Stack
 - **Language**: C++
@@ -81,17 +81,6 @@ Nomad/
 ```
 
 
----
-
-## 📚 Key Libraries & Drivers
-
-| Library | Purpose | Link/Notes |
-|---------|---------|-----------|
-| **TinyGPS++** | GPS NMEA parsing | Lightweight, handles u-blox M10 streams |
-| **BME280** | Environmental sensor driver | I2C interface for temperature/pressure |
-| **PCF8574** | GPIO expander | 8-bit I/O via I2C (buttons & interrupts) |
-| **SPI/Wire** | Hardware protocols | Built-in Arduino/ESP32 libraries |
-| **LoRa Ebyte E22** | LoRa module driver | Custom or community driver (SPI-based) |
 
 
 ## 📄 License
