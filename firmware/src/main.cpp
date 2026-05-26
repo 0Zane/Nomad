@@ -10,6 +10,7 @@
 #include "navigation.h"
 #include "pins.h"
 #include "Adafruit_MAX1704X.h"
+#include "TFT_eSPI.h"
 
 Adafruit_MAX17048 maxlipo;
 Adafruit_BME280 bme;  
@@ -19,7 +20,7 @@ bool buttonpressed = true;
 float getbattery();
 void flashlight(bool);
 int readbutton();
-void readgps();
+void updateGPS();
 int nav(int, int);
 void readtemp();
 int current_page = 0;
@@ -64,7 +65,23 @@ void loop(){
     }else{buttonpressed = false;}
 
     if (current_page == 21){
-        readgps();
+        updateGPS();
+        if (isGPSValid()) {
+            double latitude = getLatitude();
+            double longitude = getLongitude();
+            double speed = getSpeed();
+            double altitude = getAltitude();
+            uint32_t satellites = getSatellites();
+            // Now you can use and store these values
+            Serial.print("LAT: "); Serial.println(latitude, 6);
+            Serial.print("LONG: "); Serial.println(longitude, 6);
+            Serial.print("SPEED (km/h): "); Serial.println(speed);
+            Serial.print("ALT (m): "); Serial.println(altitude);
+            Serial.print("Satellites: "); Serial.println(satellites);
+            Serial.print("Time: "); Serial.println(getDateTime());
+        } else {
+            Serial.println(">> Waiting for GPS lock (satellite acquisition)...");
+        }
     } else if (current_page == 1){
 
         readtemp();

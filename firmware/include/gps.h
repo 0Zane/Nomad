@@ -6,4 +6,16 @@
 // The TinyGPS++ object
 extern TinyGPSPlus gps;
 extern HardwareSerial gpsSerial;
-void readgps();
+
+// Update GPS data from serial
+void updateGPS();
+
+// GPS data getters
+bool isGPSValid();
+uint32_t getSatellites();
+double getHDOP();
+double getLatitude();
+double getLongitude();
+double getSpeed();
+double getAltitude();
+String getDateTime();
