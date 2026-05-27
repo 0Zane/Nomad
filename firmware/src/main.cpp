@@ -22,7 +22,9 @@ void flashlight(bool);
 int readbutton();
 void updateGPS();
 int nav(int, int);
-void readtemp();
+float readTemperature();
+float readPressure();
+float readHumidity();
 int current_page = 0;
 
 void setup(){
@@ -84,7 +86,18 @@ void loop(){
         }
     } else if (current_page == 1){
 
-        readtemp();
+        Serial.print("Temperature = ");
+        Serial.print(readTemperature());
+        Serial.println(" *C");
+        
+        Serial.print("Pressure = ");
+        Serial.print(readPressure());
+        Serial.println(" hPa");
+        
+        Serial.print("Humidity = ");
+        Serial.print(readHumidity());
+        Serial.println(" %");
+        Serial.println();
     
     }
 

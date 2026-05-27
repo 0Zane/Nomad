@@ -5,21 +5,14 @@
 
 extern Adafruit_BME280 bme;  
 
-void readtemp(){
+float readTemperature(){
+    return bme.readTemperature();
+}
 
-    Serial.print("Temperature = ");
-    Serial.print(bme.readTemperature());
-    Serial.println(" *C");
+float readPressure(){
+    return bme.readPressure() / 100.0F;
+}
 
-    Serial.print("Pressure = ");
-
-    Serial.print(bme.readPressure() / 100.0F);
-    Serial.println(" hPa");
-
-    Serial.print("Humidity = ");
-    Serial.print(bme.readHumidity());
-    Serial.println(" %");
-
-    Serial.println();
-    
+float readHumidity(){
+    return bme.readHumidity();
 }

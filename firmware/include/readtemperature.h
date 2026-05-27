@@ -3,4 +3,6 @@
 
 
 
-void readtemp();
+float readTemperature();
+float readPressure();
+float readHumidity();
