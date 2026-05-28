@@ -1,1 +1,1 @@
-void flashlight(bool);
+void flashlight(bool light_state);
