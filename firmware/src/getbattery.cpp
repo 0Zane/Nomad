@@ -8,7 +8,7 @@ float getbattery(){
     if (isnan(cellVoltage)) {
         Serial.println("Failed to read cell voltage, check battery is connected!");
         delay(2000);
-        return;
+        return 0.00;
     }
     return cellVoltage, maxlipo.cellPercent();
 
