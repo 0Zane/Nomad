@@ -2,8 +2,10 @@
 #include "config.h"
 #include "gps.h"
 
+// The TinyGPS++ object
 TinyGPSPlus gps;
 HardwareSerial gpsSerial(2);
+
 
 // Update GPS data from serial
 void updateGPS() {

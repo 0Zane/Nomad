@@ -1,8 +1,8 @@
-#include "Adafruit_PCF8574.h"
 #include "config.h"
 #include "buttonread.h"
 
-extern Adafruit_PCF8574 pcf;
+Adafruit_PCF8574 pcf;
+
 
 
 int readbutton () {

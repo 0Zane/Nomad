@@ -2,10 +2,8 @@
 #include "pins.h"
 
 #define GPS_BAUD 9600
-
-// The TinyGPS++ object
 extern TinyGPSPlus gps;
-extern HardwareSerial gpsSerial;
+extern HardwareSerial gpsSerial(2);
 
 // Update GPS data from serial
 void updateGPS();

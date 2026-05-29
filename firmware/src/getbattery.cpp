@@ -1,6 +1,9 @@
 #include "Adafruit_MAX1704X.h"
 #include <Arduino.h>
+#include "getbattery.h"
+
 Adafruit_MAX17048 maxlipo;
+
 
 float getbattery(){
 

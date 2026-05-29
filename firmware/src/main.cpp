@@ -11,24 +11,16 @@
 #include "pins.h"
 #include "Adafruit_MAX1704X.h"
 #include "TFT_eSPI.h"
+#include "ui.h"
+#include "getbattery.h"
 
-Adafruit_MAX17048 maxlipo;
-Adafruit_BME280 bme;  
-Adafruit_PCF8574 pcf;
+
 bool buttonpressed = true;
 
-float getbattery();
-void flashlight(bool);
-int readbutton();
-void updateGPS();
-int nav(int, int);
-float readTemperature();
-float readPressure();
-float readHumidity();
 int current_page = 0;
 
 void setup(){
-    
+    drawtext("Nomad", 30, 30, TFT_WHITE);
     // PCF GPIO EXTENDER INITIALISATION
     if (!pcf.begin(0x20, &Wire)) {
         Serial.println("Couldn't find PCF8574");

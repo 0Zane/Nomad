@@ -2,8 +2,8 @@
 #include <Wire.h>
 #include "readtemperature.h"
 
+Adafruit_BME280 bme;
 
-extern Adafruit_BME280 bme;  
 
 float readTemperature(){
     return bme.readTemperature();

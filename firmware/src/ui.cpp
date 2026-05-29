@@ -1,14 +1,12 @@
-#include "TFT_eSPI"
-#include "nomadlogo.h"
 #include "ui.h"
+#include "TFT_eSPI.h"
+       
+extern TFT_eSPI tft;
 
 
-extern TFT_eSPI tft;  
-void drawboot(){
-
-    tft.fillScreen(TFT_BLACK);    
-    tft.pushImage(0, 0, 170, 100, nomadlogo_map);     
-    delay(2000);                       
+void drawtext(const char* text, int16_t x, int16_t y, uint32_t color) {
+    tft.setTextColor(color);
+    tft.drawString(text, x, y, 2);
 }
 
 
