@@ -6,7 +6,6 @@
 TinyGPSPlus gps;
 HardwareSerial gpsSerial(2);
 
-
 // Update GPS data from serial
 void updateGPS() {
   while (gpsSerial.available() > 0) {

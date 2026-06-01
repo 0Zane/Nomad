@@ -3,7 +3,7 @@
 
 #define GPS_BAUD 9600
 extern TinyGPSPlus gps;
-extern HardwareSerial gpsSerial(2);
+extern HardwareSerial gpsSerial;
 
 // Update GPS data from serial
 void updateGPS();

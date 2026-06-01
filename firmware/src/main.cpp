@@ -1,26 +1,28 @@
+//System Libraries
 #include <Arduino.h>
 #include <Wire.h>
-#include "flashlight.h"
-#include "buttonread.h"
-#include "config.h"
+
+//Features Libraries
 #include "readtemperature.h"
 #include "Adafruit_BME280.h"
 #include "Adafruit_PCF8574.h"
+#include "Adafruit_MAX1704X.h"
+#include "TFT_eSPI.h"
+
+//Firmware headers
 #include "gps.h"
 #include "navigation.h"
 #include "pins.h"
-#include "Adafruit_MAX1704X.h"
-#include "TFT_eSPI.h"
 #include "ui.h"
 #include "getbattery.h"
-
+#include "flashlight.h"
+#include "buttonread.h"
+#include "config.h"
 
 bool buttonpressed = true;
-
 int current_page = 0;
 
 void setup(){
-    drawtext("Nomad", 30, 30, TFT_WHITE);
     // PCF GPIO EXTENDER INITIALISATION
     if (!pcf.begin(0x20, &Wire)) {
         Serial.println("Couldn't find PCF8574");
