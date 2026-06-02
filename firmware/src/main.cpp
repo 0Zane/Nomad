@@ -35,10 +35,18 @@ void recoverI2C() {
 }
 
 void setup(){
+
+    
     // SERIAL INITIALIZATION - DO THIS FIRST
     Serial.begin(115200);
     delay(1000); // Wait for Serial to be ready
     Serial.println("\n\n=== Nomad Firmware Starting ===\n");
+
+        // DISPLAY INITIALIZATION - TEMPORARILY DISABLED FOR TESTING
+    Serial.println("Initializing display...");
+    drawboot();
+    delay(500);
+    Serial.println("Display initialized");
     
     // I2C INITIALIZATION (for BME280 and PCF8574)
     Serial.println("Initializing I2C bus...");
@@ -56,11 +64,7 @@ void setup(){
     delay(100);
     Serial.println("Serial 2 started at 9600 baud rate");
     
-    // DISPLAY INITIALIZATION - TEMPORARILY DISABLED FOR TESTING
-    // Serial.println("Initializing display...");
-    // drawboot();
-    // delay(500);
-    // Serial.println("Display initialized");
+
     
     // PCF GPIO EXTENDER INITIALISATION
     Serial.println("Initializing PCF8574 GPIO extender (0x20)...");
