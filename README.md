@@ -27,7 +27,7 @@
 | Component | Specification | Interface | Purpose |
 |-----------|---------------|-----------|---------|
 | **MCU** | ESP32-S3-WROOM-1U | — | Main processor, development in C++/PlatformIO/Arduino |
-| **Display** | LCD IPS Screen | SPI | Smooth UI with menus/submenus, PWM brightness control |
+| **Display** | 1.9" IPS Module ST7789 | SPI | Smooth UI with menus/submenus, PWM brightness control |
 | **GPS** | u-blox M8N | UART | Localization; uses TinyGPS++ library |
 | **LoRa** | Ebyte E22 | UART | Long-range messaging (SOS, coordinates) |
 | **Environmental** | BME280 | I2C | Temperature & atmospheric pressure sensing |
@@ -47,37 +47,49 @@
 ## 📁 Project Structure
 
 ```
-Nomad/
-├── firmware/                 # Main firmware codebase
-│   ├── platformio.ini       # PlatformIO project config
-│   ├── src/
-│   │   ├── main.cpp         # Entry point, setup() and loop()
-│   │   ├── gps.cpp          # GPS module driver (u-blox M10, NMEA)
-│   │   ├── lora.cpp         # LoRa communication handler
-│   │   ├── readtemperature.cpp # BME280 sensor interface
-│   │   ├── buttonread.cpp   # Button input & PCF8574 handling
-│   │   ├── flashlight.cpp   # GPIO/LED control
-│   │   ├── navigation.cpp   # UI state machine & display logic
-│   │   └── ...
-│   ├── include/
-│   │   ├── gps.h
-│   │   ├── lora.h
-│   │   ├── config.h         # Pinout, constants, configuration
-│   │   ├── readtemperature.h
-│   │   ├── buttonread.h
-│   │   ├── navigation.h
-│   │   └── ...
-│   ├── lib/                 # Third-party libraries
-│   └── test/                # Unit tests
-├── pcb/                      # KiCad PCB design files
-│   ├── nomad.kicad_sch      # Main system schematic
-│   ├── modules.kicad_sch    # Modules schematic
-│   ├── nomad.kicad_pcb      # PCB layout
-│   └── ...
-├── assets/                   # Logos, documentation images
-│   └── every logo & graphics in png format
-├── case/                     # 3D enclosure design files (if applicable)
-└── README.md                 # This file
+LICENSE
+README.md
+assets/                     # Logos & documentation images (PNG)
+case/                       # 3D enclosure design files (if applicable)
+firmware/                   # Main firmware codebase
+├── platformio.ini          # PlatformIO project config
+├── README.md
+├── include/
+│   ├── buttonread.h
+│   ├── config.h
+│   ├── flashlight.h
+│   ├── getbattery.h
+│   ├── gps.h
+│   ├── navigation.h
+│   ├── nomad_logo.h
+│   ├── pins.h
+│   ├── readtemperature.h
+│   ├── tips.h
+│   └── ui.h
+├── lib/
+│   └── README
+├── src/
+│   ├── buttonread.cpp
+│   ├── flashlight.cpp
+│   ├── getbattery.cpp
+│   ├── gps.cpp
+│   ├── main.cpp
+│   ├── navigation.cpp
+│   ├── readtemperature.cpp
+│   ├── tips.cpp
+│   └── ui.cpp
+└── test/
+	└── README
+pcb/
+├── ~nomad.kicad_pcb.lck
+├── ~nomad.kicad_pro.lck
+├── modules.kicad_sch
+├── nomad.kicad_pcb
+├── nomad.kicad_prl
+├── nomad.kicad_pro
+├── nomad.kicad_sch
+└── nomad-backups/
+
 ```
 
 
