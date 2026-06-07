@@ -6,12 +6,12 @@
 #include "gps.h"
 #include "navigation.h"
 #include "pins.h"
-#include "ui.h"
 #include "getbattery.h"
 #include "flashlight.h"
 #include "buttonread.h"
 #include "config.h"
 #include "readtemperature.h"
+#include "lora.h"
 
 bool buttonpressed = true;
 int current_page = 0;
@@ -39,15 +39,11 @@ void setup(){
     
     // SERIAL INITIALIZATION - DO THIS FIRST
     Serial.begin(115200);
+    Serial1.begin(9600, SERIAL_8N1, LORA_RX, LORA_TX);
     delay(1000); // Wait for Serial to be ready
     Serial.println("\n\n=== Nomad Firmware Starting ===\n");
 
-        // DISPLAY INITIALIZATION - TEMPORARILY DISABLED FOR TESTING
-    Serial.println("Initializing display...");
-    drawboot();
-    delay(500);
-    Serial.println("Display initialized");
-    
+
     // I2C INITIALIZATION (for BME280 and PCF8574)
     Serial.println("Initializing I2C bus...");
     pinMode(TEMP_SDA, INPUT_PULLUP);
@@ -64,7 +60,28 @@ void setup(){
     delay(100);
     Serial.println("Serial 2 started at 9600 baud rate");
     
-
+    //LORA MODULE INITIALIZATION
+    
+        Serial.println("Initializing EBYTE E22 Lora module...");
+    int lora_retries = 3;
+    while (!e220ttl.begin() && lora_retries > 0) {
+        Serial.print("PCF8574 init failed, retrying... (");
+        Serial.print(lora_retries);
+        Serial.println(" retries left)");
+        e220ttl.begin();
+        delay(500);
+        lora_retries--;
+    }
+    
+    if (lora_retries == 0) {
+        Serial.println("ERROR: Could not initialize Lora EBYTE E22 module after retries!");
+    } else {
+        Serial.println("lora EBYTE E22 found!");
+        Serial.println("testing the module...");
+        ResponseStatus rs = e220ttl.sendMessage("Hello, world?");
+        // Check If there is some problem of successfully send
+        Serial.println(rs.getResponseDescription());
+    }
     
     // PCF GPIO EXTENDER INITIALISATION
     Serial.println("Initializing PCF8574 GPIO extender (0x20)...");
@@ -168,6 +185,9 @@ void loop(){
         Serial.println(" %");
         Serial.println();
     
+    }
+    else if (current_page == 31){
+        send_message("Okay");
     }
 
     else if (current_page == 41){

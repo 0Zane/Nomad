@@ -17,7 +17,8 @@
 
 //lORA MODULE
 #define AUX 20
-#define TX3 21
-#define RX3 47
-#define MI 48
-#define MO 45
+
+#define LORA_TX 21
+#define LORA_RX 47
+#define M1 48
+#define M0 38
