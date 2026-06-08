@@ -60,8 +60,8 @@ firmware/                   # Main firmware codebase
 │   ├── flashlight.h
 │   ├── getbattery.h
 │   ├── gps.h
+│   ├── lora.h
 │   ├── navigation.h
-│   ├── nomad_logo.h
 │   ├── pins.h
 │   ├── readtemperature.h
 │   ├── tips.h
@@ -73,6 +73,7 @@ firmware/                   # Main firmware codebase
 │   ├── flashlight.cpp
 │   ├── getbattery.cpp
 │   ├── gps.cpp
+│   ├── lora.cpp
 │   ├── main.cpp
 │   ├── navigation.cpp
 │   ├── readtemperature.cpp
@@ -101,4 +102,7 @@ See [`LICENSE`](LICENSE) for project licensing details.
 
 ---
 
-**Last Updated**: May 2026 | **Status**: Active Development
+---
+
+**Last Updated**: June 2026 | **Status**: Active Development
+
