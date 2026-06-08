@@ -12,6 +12,7 @@
 #include "config.h"
 #include "readtemperature.h"
 #include "lora.h"
+#include "ui.h"
 
 bool buttonpressed = true;
 int current_page = 0;
@@ -43,6 +44,10 @@ void setup(){
     delay(1000); // Wait for Serial to be ready
     Serial.println("\n\n=== Nomad Firmware Starting ===\n");
 
+    //SCREEN INITIALIZATION
+    tft.init();
+    tft.setRotation(1);
+    drawboot();
 
     // I2C INITIALIZATION (for BME280 and PCF8574)
     Serial.println("Initializing I2C bus...");
@@ -61,16 +66,15 @@ void setup(){
     Serial.println("Serial 2 started at 9600 baud rate");
     
     //LORA MODULE INITIALIZATION
-    
-        Serial.println("Initializing EBYTE E22 Lora module...");
+    Serial.println("Initializing EBYTE E22 Lora module...");
     int lora_retries = 3;
     while (!e220ttl.begin() && lora_retries > 0) {
-        Serial.print("PCF8574 init failed, retrying... (");
-        Serial.print(lora_retries);
-        Serial.println(" retries left)");
-        e220ttl.begin();
-        delay(500);
-        lora_retries--;
+    Serial.print("PCF8574 init failed, retrying... (");
+    Serial.print(lora_retries);
+    Serial.println(" retries left)");
+    e220ttl.begin();
+    delay(500);
+    lora_retries--;
     }
     
     if (lora_retries == 0) {
