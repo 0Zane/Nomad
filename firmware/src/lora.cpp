@@ -1,18 +1,15 @@
 #include "LoRa_E220.h"
-#include <string>
 #include "gps.h"
-/*
-The Lora will:
-    -send predefined strings like: "OK", "HELP", "I NEED FOOD", "DON'T COME", "JOIN ME"
-    -send GPS coordonates
-*/
+
 LoRa_E220 e220ttl(&Serial1);
 
 void send_message(String message){
     e220ttl.sendMessage(message);
 }
 
-
+void send_gps(){
+    e220ttl.sendMessage("LAT: " + String(getLatitude()) + " LON: " + String(getLongitude()));
+}
 
 void listen_to_message(){ //next include string library and return the string value
     unsigned long listening_start_time = millis();
