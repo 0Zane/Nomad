@@ -9,7 +9,7 @@
 
 
 //GPIO EXENDER
-#define INT 10
+#define INT 2
 
 
 //FLASHLIGHT
@@ -17,7 +17,6 @@
 
 //lORA MODULE
 #define AUX 20
-
 #define LORA_TX 21
 #define LORA_RX 47
 #define M1 48
