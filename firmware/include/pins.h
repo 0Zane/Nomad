@@ -16,7 +16,7 @@
 #define FLASHLIGHT 1
 
 //lORA MODULE
-#define AUX 20
+#define AUX 18
 #define LORA_TX 21
 #define LORA_RX 47
 #define M1 48

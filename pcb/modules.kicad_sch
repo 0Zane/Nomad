@@ -3997,6 +3997,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4072,6 +4078,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR057")
 					(unit 1)
 				)
@@ -4154,6 +4166,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4228,6 +4246,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR029")
 					(unit 1)
 				)
@@ -4336,6 +4360,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "R1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4415,6 +4445,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "C17")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4490,6 +4526,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR055")
 					(unit 1)
 				)
@@ -4636,6 +4678,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "U7")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4751,6 +4799,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "D2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4825,6 +4879,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR03")
 					(unit 1)
 				)
@@ -4908,6 +4968,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "C9")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4983,6 +5049,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR069")
 					(unit 1)
 				)
@@ -5157,6 +5229,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "U6")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5231,6 +5309,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR028")
 					(unit 1)
 				)
@@ -5312,6 +5396,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5386,6 +5476,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR061")
 					(unit 1)
 				)
@@ -5471,6 +5567,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "C18")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5544,6 +5646,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR082")
 					(unit 1)
 				)
@@ -5625,6 +5733,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5698,6 +5812,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR073")
 					(unit 1)
 				)
@@ -5781,6 +5901,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "C15")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5855,6 +5981,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR068")
 					(unit 1)
 				)
@@ -5936,6 +6068,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "#PWR078")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6009,6 +6147,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR083")
 					(unit 1)
 				)
@@ -6117,6 +6261,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "J4")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6191,6 +6341,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR047")
 					(unit 1)
 				)
@@ -6274,6 +6430,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "C16")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6347,6 +6509,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR048")
 					(unit 1)
 				)
@@ -6432,6 +6600,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "C19")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6505,6 +6679,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR084")
 					(unit 1)
 				)
@@ -6588,6 +6768,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "#PWR085")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6663,6 +6849,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR049")
 					(unit 1)
 				)
@@ -6788,6 +6980,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "U4")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6861,6 +7059,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR079")
 					(unit 1)
 				)
@@ -6985,6 +7189,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "J2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7059,6 +7269,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR056")
 					(unit 1)
 				)
@@ -7142,6 +7358,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7215,6 +7437,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR080")
 					(unit 1)
 				)
@@ -7320,6 +7548,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "R14")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7395,6 +7629,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR01")
 					(unit 1)
 				)
@@ -7480,6 +7720,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "R23")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7554,6 +7800,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR072")
 					(unit 1)
 				)
@@ -7655,6 +7907,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "R17")
 					(unit 1)
 				)
@@ -7762,6 +8020,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "J3")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7835,6 +8099,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR081")
 					(unit 1)
 				)
@@ -7913,6 +8183,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR027")
 					(unit 1)
 				)
@@ -7997,6 +8273,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "R16")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8074,6 +8356,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8147,6 +8435,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR050")
 					(unit 1)
 				)
@@ -8261,6 +8555,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8359,6 +8659,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "R19")
 					(unit 1)
 				)
