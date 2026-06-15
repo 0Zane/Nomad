@@ -4811,18 +4811,6 @@
 		(uuid "60038d13-a931-400c-a99b-3bb56c6abad8")
 	)
 	(rectangle
-		(start 86.995 52.07)
-		(end 111.76 75.565)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "8a7e2902-3a38-4343-a60f-59826dc15133")
-	)
-	(rectangle
 		(start 200.66 104.775)
 		(end 267.97 133.35)
 		(stroke
@@ -4912,7 +4900,7 @@
 	)
 	(text "battery JST connector"
 		(exclude_from_sim no)
-		(at 98.298 54.61 0)
+		(at 105.664 71.882 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5043,6 +5031,12 @@
 		(uuid "90e5a6ee-b08d-4149-9d5b-a618d830b78a")
 	)
 	(junction
+		(at 101.6 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94f0b49a-d476-48cb-89b2-4e4d2737a89a")
+	)
+	(junction
 		(at 50.8 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5123,8 +5117,24 @@
 		(uuid "29a716ec-72cf-4c40-9dba-9bdb464403f5")
 	)
 	(no_connect
+		(at 266.7 62.23)
+		(uuid "3d9be5b7-7942-4255-b34d-e50fba23912c")
+	)
+	(no_connect
+		(at 266.7 67.31)
+		(uuid "3f8109fe-bdf5-49b0-88ce-29f3ff9905f8")
+	)
+	(no_connect
 		(at 266.7 54.61)
 		(uuid "51d17824-1e6f-4dbb-a679-3dd5f2f8414d")
+	)
+	(no_connect
+		(at 266.7 64.77)
+		(uuid "5419686f-473f-4acc-b129-514696d1ad97")
+	)
+	(no_connect
+		(at 266.7 59.69)
+		(uuid "58c9e055-7315-4c59-80c0-5a70fbb32275")
 	)
 	(no_connect
 		(at 162.56 181.61)
@@ -5133,6 +5143,18 @@
 	(no_connect
 		(at 106.68 39.37)
 		(uuid "6b10478d-a6b2-419c-961d-42c2a9fd4e7d")
+	)
+	(no_connect
+		(at 236.22 49.53)
+		(uuid "78f83895-ceb6-46c1-8359-5267c93e5668")
+	)
+	(no_connect
+		(at 236.22 69.85)
+		(uuid "8e5f539f-66e3-4e61-9e02-eb6a5e7e244e")
+	)
+	(no_connect
+		(at 236.22 46.99)
+		(uuid "924da184-b0f4-4ab5-b9c1-0383ff63cb30")
 	)
 	(no_connect
 		(at 266.7 31.75)
@@ -5147,8 +5169,24 @@
 		(uuid "ac36c739-f660-4efb-bd09-dc29357afec6")
 	)
 	(no_connect
+		(at 236.22 72.39)
+		(uuid "b034561f-7e5e-4a33-a5ff-0b646c8049c3")
+	)
+	(no_connect
 		(at 139.7 97.79)
 		(uuid "b2bd6524-faa7-453c-881e-0873c2078e3a")
+	)
+	(no_connect
+		(at 266.7 72.39)
+		(uuid "c1e0e438-f697-41c7-b1f8-b11843715f53")
+	)
+	(no_connect
+		(at 266.7 69.85)
+		(uuid "cb0e58fe-3000-4ddd-920e-4d96b9ea318e")
+	)
+	(no_connect
+		(at 236.22 44.45)
+		(uuid "d664f124-eea6-4bd6-9d3b-462861987500")
 	)
 	(no_connect
 		(at 162.56 179.07)
@@ -5157,6 +5195,10 @@
 	(no_connect
 		(at 142.24 181.61)
 		(uuid "f57a17e5-a495-41fb-b631-df7bb7dc732c")
+	)
+	(no_connect
+		(at 236.22 74.93)
+		(uuid "f76d0b7f-89ea-4992-af6c-bf35234fb0ae")
 	)
 	(no_connect
 		(at 266.7 49.53)
@@ -5394,6 +5436,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 66.04) (xy 88.9 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30aec60f-16d4-44ff-ba31-6939ad252e58")
+	)
+	(wire
+		(pts
 			(xy 140.97 68.58) (xy 140.97 67.31)
 		)
 		(stroke
@@ -5524,6 +5576,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 36.83) (xy 96.52 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5707406e-b09a-482e-a9bd-7b087d02522a")
+	)
+	(wire
+		(pts
 			(xy 49.53 118.11) (xy 49.53 113.03)
 		)
 		(stroke
@@ -5651,6 +5713,16 @@
 			(type default)
 		)
 		(uuid "8cbff29b-9e9c-4c7d-8247-b6db927fb237")
+	)
+	(wire
+		(pts
+			(xy 88.9 66.04) (xy 88.9 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91f85758-44e0-4b15-8d15-0d5844d6fb45")
 	)
 	(wire
 		(pts
@@ -5962,6 +6034,30 @@
 		)
 		(uuid "ffd1b478-6053-40ef-9fe1-328973d8c717")
 	)
+	(global_label "AUX"
+		(shape input)
+		(at 266.7 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "01c63786-d18f-4923-a474-cf3edf43a178")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 273.3138 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "SCL"
 		(shape input)
 		(at 104.14 100.33 180)
@@ -6106,30 +6202,6 @@
 			)
 		)
 	)
-	(global_label "AUX"
-		(shape input)
-		(at 199.39 49.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "16326414-db83-497f-8a2f-78e64dbf345c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 206.0038 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "BTN_RIGHT"
 		(shape input)
 		(at 109.22 187.96 180)
@@ -6151,6 +6223,54 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "LORA_MO"
+		(shape input)
+		(at 266.7 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "184c517d-a555-4948-b0fa-8f6c3356c461")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 278.1519 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "LORA_MI"
+		(shape input)
+		(at 266.7 46.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "185ae86a-5802-4eb6-9420-1ab7802c9f48")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 277.4262 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -6199,6 +6319,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "GPS MI"
+		(shape input)
+		(at 266.7 36.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "246f22d1-8952-4fc9-85bf-505f8cd8c6d4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 276.4585 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -6634,30 +6778,6 @@
 			)
 		)
 	)
-	(global_label "BLK"
-		(shape input)
-		(at 201.93 64.77 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b948cf92-b4f7-4feb-9a42-c88781f81300")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 208.4833 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "USB_D+"
 		(shape input)
 		(at 266.7 44.45 0)
@@ -6719,6 +6839,30 @@
 		(uuid "c550bd0a-8f7f-446b-8de1-b4007e645fd5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 133.2072 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GPS MO"
+		(shape input)
+		(at 236.22 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cb24d50b-d913-4e8b-bf19-2e86160b8c40")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 225.7358 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10778,7 +10922,7 @@
 		(dnp no)
 		(uuid "60781233-0bd9-4955-8ebd-7a17a7181dba")
 		(property "Reference" "J5"
-			(at 98.044 56.642 0)
+			(at 102.108 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10789,7 +10933,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 94.234 58.928 0)
+			(at 98.298 69.596 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11148,6 +11292,85 @@
 			(project "nomad"
 				(path "/76473bbd-feb6-4b7c-8160-a4d55fa11a55"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-BATT")
+		(at 101.6 63.5 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "677d12f6-a2f3-419f-ae46-47e914a6f648")
+		(property "Reference" "#PWR037"
+			(at 105.41 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "-BATT"
+			(at 97.79 63.4999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-BATT\""
+			(at 101.6 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "020349b5-8c1d-4b74-ba35-195fd74d2f3a")
+		)
+		(instances
+			(project "nomad"
+				(path "/76473bbd-feb6-4b7c-8160-a4d55fa11a55"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -12029,85 +12252,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 101.6 66.04 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a26fc77-e9cc-4d61-bcb8-c0d5ef76787d")
-		(property "Reference" "#PWR066"
-			(at 105.41 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 97.79 66.0399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 101.6 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "97e16b8d-9e5d-486a-ac31-20be82fa34bb")
-		)
-		(instances
-			(project "nomad"
-				(path "/76473bbd-feb6-4b7c-8160-a4d55fa11a55"
-					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 245.11 127 0)
 		(unit 1)
@@ -12445,6 +12589,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 101.6 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99ff6eee-e0e6-4cd7-b141-f1da9b0f665e")
+		(property "Reference" "#FLG02"
+			(at 101.6 61.595 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 101.6 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 101.6 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "acbbb9b0-a9ef-4f8e-9f68-f6e11490f1fb")
+		)
+		(instances
+			(project "nomad"
+				(path "/76473bbd-feb6-4b7c-8160-a4d55fa11a55"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 59.69 49.53 90)
 		(unit 1)
@@ -12456,7 +12678,7 @@
 		(dnp no)
 		(uuid "9d355ff9-f5a1-40e8-93a9-c0285cedd696")
 		(property "Reference" "R6"
-			(at 54.864 47.752 90)
+			(at 59.69 51.816 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14139,7 +14361,7 @@
 		(dnp no)
 		(uuid "c0db60fb-8520-4e51-920d-8b862c950afa")
 		(property "Reference" "R5"
-			(at 62.738 42.418 90)
+			(at 59.69 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14404,85 +14626,6 @@
 			(project "nomad"
 				(path "/76473bbd-feb6-4b7c-8160-a4d55fa11a55"
 					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 101.6 63.5 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c60ce3e4-9f41-473d-b606-f042cba7dc8f")
-		(property "Reference" "#PWR037"
-			(at 105.41 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 97.79 63.4999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 101.6 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4775de0e-e707-40e4-a5fd-f2e52ca77811")
-		)
-		(instances
-			(project "nomad"
-				(path "/76473bbd-feb6-4b7c-8160-a4d55fa11a55"
-					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -15609,85 +15752,6 @@
 			(project "nomad"
 				(path "/76473bbd-feb6-4b7c-8160-a4d55fa11a55"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 96.52 36.83 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eb8869d2-79b1-466b-a342-b376f6cdd33b")
-		(property "Reference" "#PWR071"
-			(at 100.33 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 92.71 36.8299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 96.52 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 96.52 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5a61732e-8084-480d-8c0a-9f1c5a8622c3")
-		)
-		(instances
-			(project "nomad"
-				(path "/76473bbd-feb6-4b7c-8160-a4d55fa11a55"
-					(reference "#PWR071")
 					(unit 1)
 				)
 			)

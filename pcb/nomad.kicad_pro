@@ -709,7 +709,7 @@
         "uuid": "75162775-b452-4045-a830-d8be845c35df"
       }
     ],
-    "used_designators": "C9,C15-17,#PWR61,#PWR68-69,#PWR72-75,R16,R23",
+    "used_designators": "C9,C15-19,#PWR37,#PWR48,#PWR61,#PWR68-69,#PWR72-85,#FLG2-3,R16,R23,U7",
     "variants": []
   },
   "sheets": [
