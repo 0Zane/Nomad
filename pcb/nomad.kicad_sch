@@ -8,7 +8,6 @@
 		(title "Nomad")
 		(rev "[In dev]")
 		(comment 1 "By @0Zane")
-		(comment 2 "Built for @Hackclub, fallout")
 	)
 	(lib_symbols
 		(symbol "Battery_Management:MCP73831-2-OT"
@@ -5351,7 +5350,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.2661 189.23) (xy 35.6161 189.23)
+			(xy 29.21 189.23) (xy 35.56 189.23)
 		)
 		(stroke
 			(width 0)
@@ -5758,6 +5757,16 @@
 			(type default)
 		)
 		(uuid "c77e43ab-19cd-468f-bdf0-dea6bb3ab711")
+	)
+	(wire
+		(pts
+			(xy 29.1539 181.61) (xy 29.21 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7ff94d6-c6f4-41b7-8a55-c3781a849e6d")
 	)
 	(wire
 		(pts
@@ -6647,7 +6656,7 @@
 	)
 	(global_label "BTN_DOWN"
 		(shape input)
-		(at 29.2661 189.23 180)
+		(at 29.21 189.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6657,7 +6666,7 @@
 		)
 		(uuid "afd36a77-5818-4d7e-b201-01418d2aebc3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.3628 189.23 0)
+			(at 16.3067 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7660,7 +7669,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.7761 189.23 90)
+		(at 45.72 189.23 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7671,7 +7680,7 @@
 		(fields_autoplaced yes)
 		(uuid "0c589171-4b45-426c-8b8b-10a45718898d")
 		(property "Reference" "#PWR015"
-			(at 52.1261 189.23 0)
+			(at 52.07 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7682,7 +7691,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 49.5861 189.2299 90)
+			(at 49.53 189.2299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7693,7 +7702,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.7761 189.23 0)
+			(at 45.72 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7704,7 +7713,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.7761 189.23 0)
+			(at 45.72 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7715,7 +7724,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.7761 189.23 0)
+			(at 45.72 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9848,7 +9857,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 29.2661 181.61 0)
+		(at 29.1539 181.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9859,7 +9868,7 @@
 		(fields_autoplaced yes)
 		(uuid "405ada12-d788-4338-8f8c-f8c0eab4860f")
 		(property "Reference" "#PWR014"
-			(at 29.2661 185.42 0)
+			(at 29.1539 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9870,7 +9879,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 29.2661 176.53 0)
+			(at 29.1539 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9880,7 +9889,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.2661 181.61 0)
+			(at 29.1539 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9891,7 +9900,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.2661 181.61 0)
+			(at 29.1539 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9902,7 +9911,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 29.2661 181.61 0)
+			(at 29.1539 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13639,8 +13648,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 163.068 55.118 0)
+		(property "Value" "10pF"
+			(at 163.576 55.118 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14779,7 +14788,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 29.2661 185.42 0)
+		(at 29.21 185.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14790,7 +14799,7 @@
 		(fields_autoplaced yes)
 		(uuid "d2678a1e-ad5c-4b07-a281-6ba7dd1d8810")
 		(property "Reference" "R8"
-			(at 31.8061 184.1499 0)
+			(at 31.75 184.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14801,7 +14810,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 31.8061 186.6899 0)
+			(at 31.75 186.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14812,7 +14821,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 27.4881 185.42 90)
+			(at 27.432 185.42 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14823,7 +14832,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.2661 185.42 0)
+			(at 29.21 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14834,7 +14843,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 29.2661 185.42 0)
+			(at 29.21 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14845,7 +14854,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 29.2661 185.42 0)
+			(at 29.21 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14856,7 +14865,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 29.2661 185.42 0)
+			(at 29.21 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15979,7 +15988,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 40.6961 189.23 0)
+		(at 40.64 189.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15990,7 +15999,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9ffb6cc-e54b-4f74-9f5f-5793e4299afc")
 		(property "Reference" "SW2"
-			(at 40.6961 181.61 0)
+			(at 40.64 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16000,7 +16009,7 @@
 			)
 		)
 		(property "Value" "DOWN"
-			(at 40.6961 184.15 0)
+			(at 40.64 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16010,7 +16019,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG"
-			(at 40.6961 184.15 0)
+			(at 40.64 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16021,7 +16030,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.6961 184.15 0)
+			(at 40.64 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16032,7 +16041,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 40.6961 189.23 0)
+			(at 40.64 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16043,7 +16052,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 40.6961 189.23 0)
+			(at 40.64 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16054,7 +16063,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 40.6961 189.23 0)
+			(at 40.64 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
