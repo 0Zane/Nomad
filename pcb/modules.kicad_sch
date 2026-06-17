@@ -7,9 +7,8 @@
 	(title_block
 		(title "NOMAD MODULES")
 		(date "2026-05-14")
-		(rev "[In dev]")
+		(rev "1.0")
 		(comment 1 "By @0Zane")
-		(comment 2 "Built for @Hackclub, fallout")
 	)
 	(lib_symbols
 		(symbol "2026-06-15_15-42-26:E220-900T22S"

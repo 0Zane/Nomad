@@ -28,13 +28,15 @@
 |-----------|---------------|-----------|---------|
 | **MCU** | ESP32-S3-WROOM-1U | — | Main processor, development in C++/PlatformIO/Arduino |
 | **Display** | 1.9" IPS Module ST7789 | SPI | Smooth UI with menus/submenus, PWM brightness control |
-| **GPS** | u-blox M8N | UART | Localization; uses TinyGPS++ library |
-| **LoRa** | Ebyte E22 | UART | Long-range messaging (SOS, coordinates) |
+| **GPS** | u-blox NEO-M8M | UART | High-precision localization; uses TinyGPS++ library |
+| **LoRa** | Ebyte E220-900T22S | UART | Long-range messaging (SOS, coordinates, messages) |
 | **Environmental** | BME280 | I2C | Temperature & atmospheric pressure sensing |
-| **Input** | 5 Buttons + PCF8574 | I2C (GPIO Expander) | Robust button handling with interrupt support |
-| **Battery Manager** | Adafruit MAX17048 | I2C | Fuel gauge & battery voltage monitoring |
+| **Input** | 5 Buttons + PCF8574T | I2C (GPIO Expander) | Robust button handling with interrupt support |
+| **Fuel Gauge** | MAX17048G_T10 | I2C | Battery voltage & state-of-charge monitoring |
+| **Charger IC** | MCP73831-2-OT | — | Li-Po battery charging management |
+| **Buck-Boost Converter** | TPS63060 | — | DC-DC boost converter for stable power delivery |
 | **Flashlight** | LED | GPIO (Pin 1) | Controlled illumination light |
-| **Power** | Li-ion | — | Main battery; needs protection circuit & optimization |
+| **Power** | Li-ion (Protected) | — | Main battery with integrated protection circuit |
 
 ### Development Stack
 - **Language**: C++
