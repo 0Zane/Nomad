@@ -44,6 +44,20 @@
 - **Build System**: PlatformIO
 - **IDE**: VS Code with PlatformIO extension
 
+### 🎨 Hardware Design & Schematics
+
+#### Main Schematic
+![Nomad Main Schematic](https://raw.githubusercontent.com/0Zane/Nomad/d044fa1ca44c767c17f7969d1b4e24be92ee3b6d/pcb/nomad.svg)
+
+#### Module Schematic
+![Nomad Module Schematic](https://raw.githubusercontent.com/0Zane/Nomad/d044fa1ca44c767c17f7969d1b4e24be92ee3b6d/pcb/modules.svg)
+
+### 📊 Bill of Materials
+
+The complete **Bill of Materials (BOM)** with all components, quantities, and specifications is available here:
+
+📥 [View BOM (CSV)](https://github.com/0Zane/Nomad/blob/main/pcb/bom.csv)
+
 ---
 
 ## 📁 Project Structure
