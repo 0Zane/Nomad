@@ -100,6 +100,10 @@ The device is built for field use, with an emphasis on:
 
 [![Nomad module schematic](https://raw.githubusercontent.com/0Zane/Nomad/1c8a336e28e47b4648a542668c6f2eea3e4071de/pcb/modules.svg)](https://github.com/0Zane/Nomad/blob/1c8a336e28e47b4648a542668c6f2eea3e4071de/pcb/modules.svg)
 
+### PCB Layout
+
+[![Nomad PCB layout](https://raw.githubusercontent.com/0Zane/Nomad/0db4bc9e8cf0bcd0a4c170fe730645c3520ef06e/pcb/pcblayout.png)](https://github.com/0Zane/Nomad/blob/0db4bc9e8cf0bcd0a4c170fe730645c3520ef06e/pcb/pcblayout.png)
+
 ### 3D Case
 
 [![Nomad case](https://raw.githubusercontent.com/0Zane/Nomad/361d461af25cd4167b1612e461230889cdf5da81/case/case.png)](https://github.com/0Zane/Nomad/blob/361d461af25cd4167b1612e461230889cdf5da81/case/case.png)
