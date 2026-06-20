@@ -5084,6 +5084,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5357,6 +5363,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "#PWR088")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5432,6 +5444,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR037")
 					(unit 1)
 				)
@@ -5515,6 +5533,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5590,6 +5614,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR046")
 					(unit 1)
 				)
@@ -6541,6 +6571,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "R24")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6958,6 +6994,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "J6")
 					(unit 1)
 				)
@@ -8118,6 +8160,12 @@
 					(unit 1)
 				)
 			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
+					(reference "#PWR086")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8192,6 +8240,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR089")
 					(unit 1)
 				)
@@ -8800,6 +8854,12 @@
 		(instances
 			(project "nomad"
 				(path "/75162775-b452-4045-a830-d8be845c35df"
+					(reference "#PWR087")
+					(unit 1)
+				)
+			)
+			(project "modules"
+				(path "/e9363a30-3cc9-43b9-80ad-93c267af17dd"
 					(reference "#PWR087")
 					(unit 1)
 				)
