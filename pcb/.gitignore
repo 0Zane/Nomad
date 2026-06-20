@@ -1,3 +1,4 @@
 *.kicad_prl
 /nomad-backups/*
 *.*.lck
+/gerber
