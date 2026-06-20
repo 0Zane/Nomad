@@ -1,124 +1,105 @@
 # Nomad
-## Outdoor Embedded Device for Exploration
 
-![Nomad Logo](assets/nomadlogo.png)
+**Outdoor embedded device for exploration**
 
----
 
-## 📋 Project Overview
 
-**Nomad** is a custom-designed outdoor mobile device built on the **ESP32-S3** microcontroller. Designed for explorers, researchers, and outdoor enthusiasts, Nomad combines GPS localization, LoRa communication, environmental sensing, and long battery life into a portable, rugged package.
+[![ESP32-S3](https://img.shields.io/badge/MCU-ESP32--S3-2B6CB0?style=for-the-badge)](#technical-architecture)
+[![PlatformIO](https://img.shields.io/badge/Build-PlatformIO-F5822A?style=for-the-badge)](#development-stack)
+[![Arduino](https://img.shields.io/badge/Framework-Arduino-00979D?style=for-the-badge)](#development-stack)
+[![LoRa](https://img.shields.io/badge/Radio-LoRa-5B3A91?style=for-the-badge)](#technical-architecture)
 
-### Key Features
-- **GPS Navigation** with real-time positioning and waypoint tracking
-- **LoRa Communication** for long-range mesh-style messaging (SOS alerts, coordinate sharing)
-- **Environmental Monitoring** (temperature, atmospheric pressure, altitude)
-- **Intuitive UI** with multi-level menus and state-machine-driven navigation
-- **Survival tips** useful tips for adventurers
-- **Battery Optimization** with deep sleep and intelligent power management
-- **Custom PCB Design** 
+Nomad is a custom outdoor mobile device built around the **ESP32-S3**. It is designed for explorers, researchers, and outdoor enthusiasts who need reliable positioning, long-range communication, environmental awareness, and practical survival utilities in a compact rugged package.
 
----
+> **Project status:** Active development  
+> **Last updated:** June 2026
 
-## 🔧 Technical Architecture
+[![Nomad zine](https://raw.githubusercontent.com/0Zane/Nomad/341650ad904c9da342a7fef04f9b7398d65ead2c/assets/nomadzine.png)](https://github.com/0Zane/Nomad/blob/341650ad904c9da342a7fef04f9b7398d65ead2c/assets/nomadzine.png)
+
+## Documentation
+
+| Resource | Description |
+| --- | --- |
+| [Nomad Zine](https://github.com/0Zane/Nomad/blob/341650ad904c9da342a7fef04f9b7398d65ead2c/assets/nomadzine.png) | Visual project zine and product-style overview |
+| [Bill of Materials](https://github.com/0Zane/Nomad/blob/main/pcb/bom.csv) | Complete component list with quantities and specifications |
+| [Main Schematic](https://github.com/0Zane/Nomad/blob/1c8a336e28e47b4648a542668c6f2eea3e4071de/pcb/nomad.svg) | Full board schematic |
+| [Module Schematic](https://github.com/0Zane/Nomad/blob/1c8a336e28e47b4648a542668c6f2eea3e4071de/pcb/modules.svg) | Supporting module schematic |
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Key Features](#key-features)
+- [Technical Architecture](#technical-architecture)
+- [Hardware Design](#hardware-design)
+- [Bill of Materials](#bill-of-materials)
+- [Firmware](#firmware)
+- [Project Structure](#project-structure)
+- [License](#license)
+
+## Project Overview
+
+Nomad combines navigation, messaging, sensing, power management, and a custom interface into one portable embedded system.
+
+The device is built for field use, with an emphasis on:
+
+- Knowing where you are through GPS positioning and waypoint tracking.
+- Staying connected through long-range LoRa messaging.
+- Understanding local conditions through environmental sensing.
+- Conserving energy through deep sleep and power-aware firmware.
+- Providing simple, fast interaction through buttons and a menu-driven UI.
+
+## Key Features
+
+| Feature | What it enables |
+| --- | --- |
+| **GPS navigation** | Real-time position, coordinates, and waypoint-oriented navigation |
+| **LoRa communication** | Long-range SOS alerts, coordinate sharing, and lightweight messages |
+| **Environmental monitoring** | Temperature, pressure, and altitude-related readings |
+| **Menu-driven UI** | Multi-level navigation built around a clear state-machine structure |
+| **Survival tips** | Practical outdoor guidance available directly on the device |
+| **Battery optimization** | Deep sleep and intelligent power-management behavior |
+| **Custom PCB** | Purpose-built hardware layout for the full Nomad system |
+| **Rugged enclosure** | 3D-designed case for portable outdoor use |
+
+## Technical Architecture
 
 ### Core Components
 
 | Component | Specification | Interface | Purpose |
-|-----------|---------------|-----------|---------|
-| **MCU** | ESP32-S3-WROOM-1U | — | Main processor, development in C++/PlatformIO/Arduino |
-| **Display** | 1.9" IPS Module ST7789 | SPI | Smooth UI with menus/submenus, PWM brightness control |
-| **GPS** | u-blox NEO-M8M | UART | High-precision localization; uses TinyGPS++ library |
-| **LoRa** | Ebyte E220-900T22S | UART | Long-range messaging (SOS, coordinates, messages) |
-| **Environmental** | BME280 | I2C | Temperature & atmospheric pressure sensing |
-| **Input** | 5 Buttons + PCF8574T | I2C (GPIO Expander) | Robust button handling with interrupt support |
-| **Fuel Gauge** | MAX17048G_T10 | I2C | Battery voltage & state-of-charge monitoring |
-| **Charger IC** | MCP73831-2-OT | — | Li-Po battery charging management |
-| **Buck-Boost Converter** | TPS63060 | — | DC-DC boost converter for stable power delivery |
-| **Flashlight** | LED | GPIO (Pin 1) | Controlled illumination light |
-| **Power** | Li-ion (Protected) | — | Main battery with integrated protection circuit |
+| --- | --- | --- | --- |
+| **MCU** | ESP32-S3-WROOM-1U | GPIO, UART, SPI, I2C | Main processor running C++ firmware with PlatformIO and Arduino |
+| **Display** | 1.9 in IPS ST7789 display panel via FPC | SPI | Smooth UI rendering with menu/submenu screens and PWM brightness control |
+| **GPS** | u-blox NEO-M8M | UART | High-precision localization using the TinyGPS++ library |
+| **LoRa** | Ebyte E220-900T22S | UART | Long-range messaging for SOS, coordinate sharing, and text packets |
+| **Environmental sensor** | BME280 | I2C | Temperature and atmospheric pressure sensing |
+| **Input** | 5 buttons with PCF8574T GPIO expander | I2C | Robust button handling with interrupt support |
+| **Fuel gauge** | MAX17048G_T10 | I2C | Battery voltage and state-of-charge monitoring |
+| **Charger IC** | MCP73831-2-OT | Power management | Li-Po battery charging management |
+| **Buck-boost converter** | TPS63060 | Power management | Stable regulated power delivery |
+| **Flashlight** | LED | GPIO pin 1 | Controlled illumination for field use |
+| **Power source** | Protected Li-ion battery | Power | Main battery with integrated protection circuit |
 
 ### Development Stack
-- **Language**: C++
-- **Framework**: Arduino (via PlatformIO)
-- **Build System**: PlatformIO
-- **IDE**: VS Code with PlatformIO extension
 
-### 🎨 Hardware Design & Schematics
+| Layer | Tooling |
+| --- | --- |
+| **Language** | C++ |
+| **Framework** | Arduino |
+| **Build system** | PlatformIO |
+| **IDE** | VS Code with the PlatformIO extension |
+| **Primary firmware target** | ESP32-S3 |
 
-#### Main Schematic
-![Nomad Main Schematic](https://raw.githubusercontent.com/0Zane/Nomad/d044fa1ca44c767c17f7969d1b4e24be92ee3b6d/pcb/nomad.svg)
+## Hardware Design
 
-#### Module Schematic
-![Nomad Module Schematic](https://raw.githubusercontent.com/0Zane/Nomad/d044fa1ca44c767c17f7969d1b4e24be92ee3b6d/pcb/modules.svg)
+### Main Schematic
 
-### 📊 Bill of Materials
+[![Nomad main schematic](https://raw.githubusercontent.com/0Zane/Nomad/1c8a336e28e47b4648a542668c6f2eea3e4071de/pcb/nomad.svg)](https://github.com/0Zane/Nomad/blob/1c8a336e28e47b4648a542668c6f2eea3e4071de/pcb/nomad.svg)
 
-The complete **Bill of Materials (BOM)** with all components, quantities, and specifications is available here:
+### Module Schematic
 
-📥 [View BOM (CSV)](https://github.com/0Zane/Nomad/blob/main/pcb/bom.csv)
+[![Nomad module schematic](https://raw.githubusercontent.com/0Zane/Nomad/1c8a336e28e47b4648a542668c6f2eea3e4071de/pcb/modules.svg)](https://github.com/0Zane/Nomad/blob/1c8a336e28e47b4648a542668c6f2eea3e4071de/pcb/modules.svg)
 
----
+### 3D Case
 
-## 📁 Project Structure
-
-```
-LICENSE
-README.md
-assets/                     # Logos & documentation images (PNG)
-case/                       # 3D enclosure design files (if applicable)
-firmware/                   # Main firmware codebase
-├── platformio.ini          # PlatformIO project config
-├── README.md
-├── include/
-│   ├── buttonread.h
-│   ├── config.h
-│   ├── flashlight.h
-│   ├── getbattery.h
-│   ├── gps.h
-│   ├── lora.h
-│   ├── navigation.h
-│   ├── pins.h
-│   ├── readtemperature.h
-│   ├── tips.h
-│   └── ui.h
-├── lib/
-│   └── README
-├── src/
-│   ├── buttonread.cpp
-│   ├── flashlight.cpp
-│   ├── getbattery.cpp
-│   ├── gps.cpp
-│   ├── lora.cpp
-│   ├── main.cpp
-│   ├── navigation.cpp
-│   ├── readtemperature.cpp
-│   ├── tips.cpp
-│   └── ui.cpp
-└── test/
-	└── README
-pcb/
-├── ~nomad.kicad_pcb.lck
-├── ~nomad.kicad_pro.lck
-├── modules.kicad_sch
-├── nomad.kicad_pcb
-├── nomad.kicad_prl
-├── nomad.kicad_pro
-├── nomad.kicad_sch
-└── nomad-backups/
-
-```
-
-
-
-
-## 📄 License
-
-See [`LICENSE`](LICENSE) for project licensing details.
-
----
-
----
-
-**Last Updated**: June 2026 | **Status**: Active Development
+[![Nomad case](https://raw.githubusercontent.com/0Zane/Nomad/361d461af25cd4167b1612e461230889cdf5da81/case/case.png)](https://github.com/0Zane/Nomad/blob/361d461af25cd4167b1612e461230889cdf5da81/case/case.png)
 
