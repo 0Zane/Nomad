@@ -10,6 +10,7 @@
 [![LoRa](https://img.shields.io/badge/Radio-LoRa-5B3A91?style=for-the-badge)](#technical-architecture)
 
 Nomad is a custom outdoor mobile device built around the **ESP32-S3**. It is designed for explorers, researchers, and outdoor enthusiasts who need reliable positioning, long-range communication, environmental awareness, and practical survival utilities in a compact rugged package.
+I made this project entirely myself, the idea comes from my passion of making useful objects that help people in specific actions.
 
 > **Project status:** Active development  
 > **Last updated:** June 2026
@@ -47,7 +48,7 @@ The device is built for field use, with an emphasis on:
 - Understanding local conditions through environmental sensing.
 - Conserving energy through deep sleep and power-aware firmware.
 - Providing simple, fast interaction through buttons and a menu-driven UI.
-
+- Accessing to useful survival tips 
 ## Key Features
 
 | Feature | What it enables |
