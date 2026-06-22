@@ -34,7 +34,7 @@
 "U4","1","BME280","Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering","https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf", "$3.86","https://www.lcsc.com/product-detail/C92489.html"
 "U5","1","MCP73831-2-OT","Package_TO_SOT_SMD:SOT-23-5","http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf", "$0.59","https://www.lcsc.com/product-detail/C424093.html"
 "U6","1","NEO-M8M","RF_GPS:ublox_NEO","https://content.u-blox.com/sites/default/files/NEO-M8-FW3_DataSheet_UBX-15031086.pdf", "$18.41", "https://www.lcsc.com/product-detail/C5119406.html"
-"U7","1","E220-900T22S","E220-900T22S_BYT","E220-900T22S" , "$3.67", "https://www.lcsc.com/product-detail/C970285.html"
+"U7","1","E220-900T22S","E220-900T22S_BYT","E220-900T22S", "$3.67", "https://www.lcsc.com/product-detail/C970285.html"
 "U8","1","TPS63060","Package_SON:Texas_S-PWSON-N10_ThermalVias","http://www.ti.com/lit/ds/symlink/tps63060.pdf", "$1.08", "https://www.lcsc.com/product-detail/C48567.html"
 "PCB","5","2 Layer, 1.6mm", " default High-spec Options on JLCPCB", "", "$7.40", "https://cart.jlcpcb.com/"
 "PCB shipping", "1", "6-9 buisness days", "EuroPacket", "", "$8.50", "https://cart.jlcpcb.com/"
