@@ -1,6 +1,6 @@
 "Reference","Qty (used)","Value","Footprint","Datasheet", "Ext.price", "buy link"
 "C1,C2,C3,C4,C8,C9,C12,C15,C16,C18","10","0.1uF","Capacitor_SMD:C_0805_2012Metric", "","$0.25", "https://www.lcsc.com/product-detail/C1711.html"
-"C5,C10,C11,C14,C20","5","22uF","Capacitor_SMD:C_0805_2012Metric", "", "$0.33", "https://www.lcsc.com/product-detail/C602037.html
+"C5,C10,C11,C14,C20","5","22uF","Capacitor_SMD:C_0805_2012Metric", "", "$0.33", "https://www.lcsc.com/product-detail/C602037.html"
 "C6,C7","2","4.7uF","Capacitor_SMD:C_0805_2012Metric","", "$0.28", "https://www.lcsc.com/product-detail/C98192.html"
 "C13","1","10pF","Capacitor_SMD:C_0805_2012Metric","","$0.34", "https://www.lcsc.com/product-detail/C15850.html"
 "C17,C19","2","10uF","Capacitor_SMD:C_0805_2012Metric","","$0.59","https://www.lcsc.com/product-detail/C15850.html"
