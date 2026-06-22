@@ -7266,8 +7266,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
-			(at 65.786 107.188 0)
+		(property "Value" "4.7uF"
+			(at 61.722 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
