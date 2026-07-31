@@ -44,7 +44,7 @@ int nav(int button_action, int current_page){
              submenu_max = 4; // temperature, relative humidity, barometric pressure, and altitude, time
             }
         else if (floor(current_page / 10) == 1){ // we are in Flashlight
-             submenu_max = 1; //Level of light ( maybe different levels of light in the future)
+             submenu_max = 1; // Turn on and off
             }
         else if (floor(current_page / 10) == 2){ // we are in GPS
              submenu_max = 6; // LAT, LON, SPE, ALT, HDOP, SAT
